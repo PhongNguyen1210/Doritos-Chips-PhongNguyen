@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="img chips/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="css\swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="css\styles.css">
+
+      <title>Doritos® - PhongNguyen</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">Doritos</a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li>
+                     <a href="#home" class="nav__link active-link">Trang chủ</a>
+                  </li>
+
+                  <li>
+                     <a href="#favorites" class="nav__link ">Yêu Thích</a>
+                  </li>
+
+                  <li>
+                     <a href="#care" class="nav__link">Quan tâm</a>
+                  </li>
+
+                  <li>
+                     <a href="#products" class="nav__link">Sản phẩm</a>
+                  </li>
+
+                  <li>
+                     <a href="#contact" class="nav__link">Liên hệ</a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+
+               <div class="nav__social">
+                  <a href="https://www.facebook.com/doritos/?brand_redir=24497276164" target="_blank" class="nav__social-link">
+                     <i class="ri-facebook-line"></i>
+                  </a>
+
+                  <a href="https://www.instagram.com/doritos" target="_blank" class="nav__social-link">
+                     <i class="ri-instagram-line"></i>
+                  </a>
+
+                  <a href="https://x.com/doritos" target="_blank" class="nav__social-link">
+                     <i class="ri-twitter-x-line"></i>
+                  </a>
+                  
+                  <a href="https://www.youtube.com/channel/UCGTGlZDAATNAAXINMLj4jgw" target="_blank" class="nav__social-link">
+                     <i class="ri-youtube-line"></i>
+                  </a>
+                  
+               </div>
+               
+            </div>
+      <!--==================== CART ====================-->
+            <div class="nav__cart">
+               <div class="nav__shop" id="cart-icon">
+                   <i class="ri-shopping-cart-line"></i>
+               </div>
+               <section class="cart section" id="cart">
+                  <h2 class="section__titlecart">Giỏ hàng</h2>
+                  <div class="cart__container container">
+                     <ul class="cart__list" id="cart-list">
+                        
+                        <li class="cart__item">
+                           <span class="cart__name"></span>
+                           <div class="cart__quantity-control hidden">
+                              <button class="cart__decrease-button hidden"><i class="ri-subtract-line"></i></button>
+                              <span class="cart__quantity"></span>
+                              <button class="cart__increase-button hidden"><i class="ri-add-line"></i></button>
+                          </div>
+                           <span class="cart__price"></span>
+                           
+                           <button class="cart__remove-button hidden">
+                              <i class="ri-delete-bin-6-line"></i>
+                           </button>
+                       </li>
+                     </ul>
+
+                     <div class="cart__total">
+                        <span>Tổng cộng: </span>
+                        <span id="cart-total">0 VNĐ</span>
+                        
+                     </div>
+                     <button class="button" id="checkout-button">
+                        <i class="ri-shopping-cart-line"></i> Thanh toán
+                     </button>
+                  </div>
+               </section>
+            </div>
+
+               <div class="nav__toggle" id="nav-toggle">
+                   <i class="ri-apps-2-line"></i>
+               </div>
+           
+            
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <div class="home__data">
+                  <h1 class="home__title">Ăn bánh <br> Không <br> Giới hạn </h1>
+
+                  <p class="home__description">
+                     Khi bạn đói và không có thời gian
+                     để nấu ăn, đồ ăn nhẹ là giải pháp hoàn hảo,
+                     luôn chuẩn bị cho cơn đói giữa trưa.
+                  </p>
+
+                  <img src="img chips/meat.png" alt="image" class="home__meat">
+
+                  <div class="home__button">
+                     <a href="#" class="button">Ăn bánh ngay</a>
+                     <a href="#" class="button button__ghost">Mua ngay</a>
+                  </div>
+               </div>
+
+               <div class="home__images">
+                  <div class="home__circle">
+                     <div class="home__subcircle"></div>
+                  </div>
+
+                  <img src="img chips/home-chips.png" alt="image" class="home__img">
+
+                  <img src="img chips/chips-3.png" alt="image" class="home__chips-1">
+                  <img src="img chips/chips-3.png" alt="image" class="home__chips-2">
+                  <img src="img chips/chips-3.png" alt="image" class="home__chips-3">
+                  <img src="img chips/tomato-1.png" alt="image" class="home__tomato-1">
+                  <img src="img chips/tomato-2.png" alt="image" class="home__tomato-2">
+                  <img src="img chips/leaf-3.png" alt="image" class="home__leaf">
+               </div>
+            </div>
+         </section>
+
+         <!--==================== FAVORITES ====================-->
+         <section class="favorite section" id="favorites">
+            <div class="favorite__container container grid">
+               <div class="favorite__data">
+                  <h2 class="section__title">Khám phá <br> Hương vị yêu thích </h2>
+
+                  <p class="favorite__description">
+                     Hãy thử một số hương vị lạ hoặc toppings ngon.
+                     Chúng tôi đã thu thập một số công thức ngon
+                     từ khắp nơi trên thế giới dành cho bạn.
+                  </p>
+
+                  <img src="img chips/cheese.png" alt="" class="favorite__cheese-1">
+                  <img src="img chips/cheese.png" alt="" class="favorite__cheese-2">
+               </div>
+
+               <div class="favorite__swiper swiper">
+                  <div class="swiper-wrapper">
+                     <article class="favorite__article swiper-slide">
+                        <img src="img chips/favorite-chips-1.png" alt="image" class="favorite__img">
+
+                        <img src="img chips/leaf-1.png" alt="image" class="favorite__leaf-1">
+                        <img src="img chips/leaf-2.png" alt="image" class="favorite__leaf-2">
+                     </article>
+
+                     <article class="favorite__article swiper-slide">
+                        <img src="img chips/favorite-chips-2.png" alt="image" class="favorite__img">
+
+                        <img src="img chips/leaf-1.png" alt="image" class="favorite__leaf-1">
+                        <img src="img chips/leaf-2.png" alt="image" class="favorite__leaf-2">
+                     </article>
+
+                     <article class="favorite__article swiper-slide">
+                        <img src="img chips/favorite-chips-3.png" alt="image" class="favorite__img">
+
+                        <img src="img chips/leaf-1.png" alt="image" class="favorite__leaf-1">
+                        <img src="img chips/leaf-2.png" alt="image" class="favorite__leaf-2">
+                     </article>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== CARE ====================-->
+         <section class="care section" id="care">
+            <h2 class="section__title">Thưởng thức và quan tâm <br> đến sức khỏe của bạn</h2>
+
+            <div class="care__container container grid">
+               <ul class="care__list">
+                  <li class="care__item">
+                     <i class="ri-plant-line"></i>
+                     <p>
+                        Khoai tây dùng để làm
+                        đồ ăn nhẹ được trồng và thu hoạch và
+                        100% hữu cơ.
+                     </p>
+                  </li>
+
+                  <li class="care__item">
+                     <i class="ri-fire-line"></i>
+                     <p>
+                        Chúng tôi chiên khoai tây chiên bằng dầu thực vật và
+                        tự nhiên để đảm bảo vệ sinh.
+                     </p>
+                  </li>
+
+                  <li class="care__item">
+                     <i class="ri-heart-pulse-line"></i>
+                     <p>
+                        Khoai tây không được chế biến, sau khi được
+                        làm sạch, chúng được nấu chín mà
+                        không có chất bảo quản.
+                     </p>
+                  </li>
+
+                  <li class="care__item">
+                     <i class="ri-hand-heart-line"></i>
+                     <p>
+                        Chúng chứa ít calo và ít chất béo hơn
+                        tốt cho sức khỏe.
+                     </p>
+                  </li>
+               </ul>
+
+               <img src="img chips/care-chips.png" alt="images" class="care__img">
+            </div>
+         </section>
+
+         <!--==================== BANNER ====================-->
+         <section class="banner">
+            <div class="banner__container">
+               <ul class="banner__list">
+                  <li class="banner__item">
+                     <i class="ri-leaf-line"></i>
+                     <span>TỐT CHO THIÊN NHIÊN</span>
+                  </li>
+
+                  <li class="banner__item">
+                     <i class="ri-heart-add-line"></i>
+                     <span>ÍT CALORIES</span>
+                  </li>
+               </ul>
+            </div>
+         </section>
+
+         <!--==================== PRODUCTS ====================-->
+         <section class="products section" id="products">
+            <h2 class="section__title">Sản phẩm <br> bán chạy nhất</h2>
+
+            <div class="products__container container">
+               <div class="products__content grid">
+                  <article class="products__card">
+                     <img src="img chips/product-chips-1.png" alt="image" class="products__img">
+
+                     <span class="products__subtitle">
+                        DORITOS® Nacho Cheese Flavored Tortilla Chips</span>
+                     <h2 class="products__title">Chips</h2>
+
+                     <span class="products__price">120.000 VNĐ</span>
+
+                     <button class="products__button">
+                        <i class="ri-shopping-bag-3-line"></i>
+                     </button>
+                  </article>
+
+                  <article class="products__card">
+                     <img src="img chips/product-chips-2.png" alt="image" class="products__img">
+
+                     <span class="products__subtitle">DORITOS® COOL RANCH® Flavored Tortilla Chips</span>
+                     <h2 class="products__title">Chips</h2>
+
+                     <span class="products__price">125.000 VNĐ</span>
+
+                     <button class="products__button">
+                        <i class="ri-shopping-bag-3-line"></i>
+                     </button>
+                  </article>
+
+                  <article class="products__card">
+                     <img src="img chips/product-chips-3.png" alt="image" class="products__img">
+
+                     <span class="products__subtitle">DORITOS® TACO FLAVOR</span>
+                     <h2 class="products__title">Chips</h2>
+
+                     <span class="products__price">135.000 VNĐ</span>
+
+                     <button class="products__button">
+                        <i class="ri-shopping-bag-3-line"></i>
+                     </button>
+                  </article>
+
+                  <article class="products__card">
+                     <img src="img chips/product-chips-4.png" alt="image" class="products__img">
+
+                     <span class="products__subtitle">DORITOS® Salsa Verde Flavored Tortilla Chips</span>
+                     <h2 class="products__title">Chips</h2>
+
+                     <span class="products__price">130.000 VNĐ</span>
+
+                     <button class="products__button">
+                        <i class="ri-shopping-bag-3-line"></i>
+                     </button>
+                  </article>
+
+                  <article class="products__card">
+                     <img src="img chips/product-chips-5.png" alt="image" class="products__img">
+
+                     <span class="products__subtitle">DORITOS® SWEET & TANGY BBQ</span>
+                     <h2 class="products__title">Chips</h2>
+
+                     <span class="products__price">139.000 VNĐ</span>
+
+                     <button class="products__button">
+                        <i class="ri-shopping-bag-3-line"></i>
+                     </button>
+                  </article>
+
+                  <article class="products__card">
+                     <img src="img chips/product-chips-6.png" alt="image" class="products__img">
+
+                     <span class="products__subtitle">DORITOS® Spicy Sweet Chili Flavored Tortilla Chips</span>
+                     <h2 class="products__title">Chips</h2>
+
+                     <span class="products__price">135.000 VNĐ</span>
+
+                     <button class="products__button">
+                        <i class="ri-shopping-bag-3-line"></i>
+                     </button>
+                  </article>
+
+                  <article class="products__card">
+                     <img src="img chips/product-chips-7.png" alt="image" class="products__img">
+
+                     <span class="products__subtitle">Doritos® MINIS Cool Ranch</span>
+                     <h2 class="products__title">Chips</h2>
+
+                     <span class="products__price">1.100.000 VNĐ</span>
+
+                     <button class="products__button">
+                        <i class="ri-shopping-bag-3-line"></i>
+                     </button>
+                  </article>
+
+                  <article class="products__card">
+                     <img src="img chips/product-chips-8.png" alt="image" class="products__img">
+
+                     <span class="products__subtitle">DORITOS® Mix Variety Pack</span>
+                     <h2 class="products__title">Chips</h2>
+
+                     <span class="products__price">1.210.000 VNĐ</span>
+
+                     <button class="products__button">
+                        <i class="ri-shopping-bag-3-line"></i>
+                     </button>
+                  </article>
+
+                  <article class="products__card">
+                     <img src="img chips/product-chips-9.png" alt="image" class="products__img">
+
+                     <span class="products__subtitle">Doritos Dinamita Sticks - Tangy Fiery Lime</span>
+                     <h2 class="products__title">Chips</h2>
+
+                     <span class="products__price">180.000 VNĐ</span>
+
+                     <button class="products__button">
+                        <i class="ri-shopping-bag-3-line"></i>
+                     </button>
+                  </article>
+
+                  <article class="products__card">
+                     <img src="img chips/product-chips-10.png" alt="image" class="products__img">
+
+                     <span class="products__subtitle">Doritos Dinamita Sticks - Hot Honey Mustard</span>
+                     <h2 class="products__title">Chips</h2>
+
+                     <span class="products__price">150.000 VNĐ</span>
+
+                     <button class="products__button">
+                        <i class="ri-shopping-bag-3-line"></i>
+                     </button>
+                  </article>
+               </div>
+               <img src="img chips/crab.png" alt="image" class="products__crab">
+               <img src="img chips/hamburger.png" alt="image" class="products__hamburger">
+               <img src="img chips/cheese.png" alt="image" class="products__cheese">
+            </div>
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            <div class="contact__container container">
+               <h2 class="section__title">Liên hệ với chúng tôi <br> để đặt hàng</h2>
+
+               <div class="contact__content grid">
+                  <div class="contact__data grid">
+                     <div>
+                        <h3 class="contact__title">Viết thư cho chúng tôi</h3>
+
+                        <div class="contact__social">
+                           <a href="https://contact.pepsico.com/fritolay/contact-us" target="_blank">
+                              <i class="ri-whatsapp-fill"></i>
+                           </a>
+
+                           <a href="https://contact.pepsico.com/fritolay/contact-us" target="_blank">
+                              <i class="ri-messenger-fill"></i>
+                           </a>
+
+                           <a href="https://contact.pepsico.com/fritolay/contact-us" target="_blank">
+                              <i class="ri-mail-fill"></i>
+                           </a>
+                        </div>
+                     </div>
+
+                     <div>
+                        <h3 class="contact__title">Gọi cho chúng tôi</h3>
+                        <address class="contact__info">
+                           1-800-352-4477 <br> M—F 9:00am - 4:30pm CT
+                        </address>
+                     </div>
+
+                     <div>
+                        <h3 class="contact__title">Tìm chúng tôi ở đây</h3>
+
+                        <address class="contact__info">
+                           Frito-Lay North America, Inc. a Divison of PepsiCo
+                        </address>
+                     </div>
+                  </div>
+
+                  <img src="img chips/contact-man.png" alt="image" class="contact__img">
+               </div>
+
+               <img src="img chips/shrimp.png" alt="image" class="contact__shrimp">
+               <img src="img chips/crab.png" alt="image" class="contact__crab">
+               <img src="img chips/meat.png" alt="image" class="contact__meat">
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <a href="" class="footer__logo">Doritos</a>
+
+            <div class="footer__content grid">
+               <a href="#" class="footer__link">Điều khoản & Thỏa thuận</a>
+               <a href="#" class="footer__link">Chính sách bảo mật</a>
+
+               <span class="footer__copy">
+                  &#169; All Rights Reserved By PhongNguyen
+               </span>
+            </div>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="js\scrollreveal.min.js"></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="js\swiper-bundle.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="js\main.js"></script>
+   </body>
+</html>
